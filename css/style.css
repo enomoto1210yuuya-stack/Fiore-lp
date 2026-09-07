@@ -226,6 +226,10 @@ section { padding: 6.5rem 0; }
 /* ---------- お問い合わせ ---------- */
 .contact .wrap { max-width: 720px; }
 .contact-note { text-align: center; font-size: .9rem; color: var(--sub); }
+/* 注意書き（営業・勧誘お断り） */
+.notice { margin: 2.2rem auto 0; max-width: 620px; text-align: left; background: var(--surface); border-left: 4px solid var(--accent); border-radius: 1.2rem; padding: 1.4rem 1.6rem; }
+.notice-title { font-family: var(--font-display); font-weight: 900; color: var(--accent); font-size: 1rem; margin-bottom: .5em; }
+.notice p { font-size: .88rem; line-height: 1.9; color: var(--ink); }
 .form { margin-top: 2.4rem; display: grid; gap: 1.5rem; }
 .field label { display: block; font-weight: 900; font-size: .88rem; margin-bottom: .5em; }
 .field .req { color: var(--accent); font-size: .74rem; margin-left: .5em; }

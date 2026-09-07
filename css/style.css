@@ -102,7 +102,7 @@ ul { list-style: none; }
 .btn-ghost:hover { background: var(--accent); color: #fff; }
 .hero-photo { position: relative; }
 .hero-photo img {
-  width: 100%; aspect-ratio: 4/4.6; object-fit: cover;
+  width: 100%; height: auto; aspect-ratio: 4/4.6; object-fit: cover;
   border-radius: var(--leaf);
 }
 .hero-photo::before {
@@ -137,7 +137,7 @@ section { padding: 6.5rem 0; }
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: clamp(2.5rem, 5vw, 5rem); align-items: center;
 }
-.about-photo img { width: 100%; aspect-ratio: 4/3.4; object-fit: cover; border-radius: var(--leaf-r); }
+.about-photo img { width: 100%; height: auto; aspect-ratio: 4/3.4; object-fit: cover; border-radius: var(--leaf-r); }
 .about-copy .sec-head { text-align: left; }
 .about-copy .sec-head::before { margin: 0 0 .9rem; }
 .about-copy p { margin-top: 1.2rem; max-width: 28em; }
@@ -171,7 +171,7 @@ section { padding: 6.5rem 0; }
   gap: 2.4rem 2rem;
 }
 .service img {
-  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover;
   transition: transform .35s;
 }
 .service:nth-child(odd) img  { border-radius: var(--leaf); }
@@ -216,6 +216,12 @@ section { padding: 6.5rem 0; }
   border-bottom: 1px solid var(--line); vertical-align: top; font-size: .95rem;
 }
 .recruit-table th { width: 9em; font-weight: 900; white-space: nowrap; }
+/* 勤務地の一覧（4列・列方向に並ぶ） */
+.loc-list { list-style: none; margin: 0; column-count: 4; column-gap: 1.6rem; }
+.loc-list li { position: relative; padding-left: 1.1em; font-size: .88rem; line-height: 1.8; break-inside: avoid; color: var(--ink); }
+.loc-list li::before { content: ""; position: absolute; left: .1em; top: .7em; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+@media (max-width: 860px) { .loc-list { column-count: 2; } }
+@media (max-width: 420px) { .loc-list { column-count: 1; } }
 
 /* ---------- お問い合わせ ---------- */
 .contact .wrap { max-width: 720px; }

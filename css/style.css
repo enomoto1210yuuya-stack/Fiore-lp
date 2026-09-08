@@ -178,7 +178,9 @@ section { padding: clamp(3.8rem, 8vw, 7rem) 0; position: relative; }
 .pain-list { display: grid; gap: 1rem; }
 .pain { display: flex; align-items: center; gap: 1.1rem; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.16); border-radius: 999px; padding: 1.05rem 1.6rem; transition: border-color .3s, background .3s, transform .3s; }
 .pain:hover { border-color: rgba(255,154,166,.6); background: rgba(216,40,60,.12); transform: translateX(4px); }
-.pain-ico { flex: none; width: 40px; height: 40px; display: grid; place-items: center; font-size: 1.2rem; background: rgba(255,255,255,.08); border-radius: 50%; }
+.pain-ico { flex: none; width: 46px; height: 46px; display: grid; place-items: center; color: #FF9AA6; background: rgba(216,40,60,.16); border: 1px solid rgba(255,154,166,.3); border-radius: 13px; transition: color .3s, background .3s, border-color .3s; }
+.pain-ico svg { width: 23px; height: 23px; }
+.pain:hover .pain-ico { color: #fff; background: rgba(216,40,60,.4); border-color: rgba(255,154,166,.6); }
 .pain p { font-weight: 700; font-size: clamp(.92rem, 1.6vw, 1.02rem); }
 
 /* ---------- Fioreなら（3つの価値） ---------- */

@@ -95,6 +95,12 @@ if (menuBtn && mnav) {
   }, { threshold: 0, rootMargin: '0px 0px -6% 0px' });
   reveals.forEach((el) => io.observe(el));
 
+  // 数字カウントは [data-count] を直接監視（.reveal の外＝ヒーロー等でも発火させる）
+  const cio = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { runCount(e.target); cio.unobserve(e.target); } });
+  }, { threshold: 0 });
+  document.querySelectorAll('[data-count]').forEach((el) => cio.observe(el));
+
   // 安全網：高速スクロール・アンカー移動でも画面内の要素は必ず表示
   const safety = () => {
     const vh = window.innerHeight || document.documentElement.clientHeight;

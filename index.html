@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>document.documentElement.classList.add('js');</script>
 <title>株式会社Fiore｜在庫管理・梱包・発送代行</title>
-<meta name="description" content="株式会社Fioreは、在庫管理代行・商品梱包代行・商品発送代行の会社。ひとつひとつの商品をていねいにお預かりし、EC事業者・企業の物流をやさしく支えます。">
+<meta name="description" content="株式会社Fioreは、在庫管理代行・商品梱包代行・商品発送代行の会社。ひとつひとつの商品をていねいにお預かりし、EC事業者・企業の物流をまるごと支えます。">
 
 <!-- canonical / OGP：公開予定ドメインが未定のため example.com を仮設定（要差し替え） -->
 <link rel="canonical" href="https://www.example.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="株式会社Fiore">
 <meta property="og:title" content="株式会社Fiore｜在庫管理・梱包・発送代行">
-<meta property="og:description" content="ひとつひとつの商品をていねいにお預かり。在庫管理・梱包・発送代行で、あなたのビジネスをやさしく支えます。">
+<meta property="og:description" content="在庫管理から梱包、発送まで、まるごとお任せ。EC事業者・企業の物流をていねいに、正確に支えます。">
 <meta property="og:url" content="https://www.example.com/">
 <meta property="og:image" content="https://www.example.com/images/ogp.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +21,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 
 <script type="application/ld+json">
@@ -46,7 +46,7 @@
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 <header class="header" id="header">
-  <a class="brand" href="#">
+  <a class="brand" href="#top">
     <span class="brand-mark" aria-hidden="true"></span>
     <span class="brand-text">
       <span class="brand-name">株式会社Fiore</span>
@@ -55,13 +55,14 @@
   </a>
   <nav class="gnav" aria-label="グローバルナビゲーション">
     <ul>
-      <li><a href="#about"><span class="gnav-i">01</span>私たちについて</a></li>
-      <li><a href="#services"><span class="gnav-i">02</span>サービス</a></li>
-      <li><a href="#company"><span class="gnav-i">03</span>会社情報</a></li>
-      <li><a href="#recruit"><span class="gnav-i">04</span>採用情報</a></li>
+      <li><a href="#about">私たちについて</a></li>
+      <li><a href="#services">サービス</a></li>
+      <li><a href="#reasons">選ばれる理由</a></li>
+      <li><a href="#company">会社情報</a></li>
+      <li><a href="#recruit">採用情報</a></li>
     </ul>
   </nav>
-  <a href="#contact" class="cta-btn"><span>お問い合わせ</span></a>
+  <a href="#contact" class="btn-cta header-cta"><span>お問い合わせ</span></a>
   <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="mnav"><span></span></button>
 </header>
 
@@ -70,163 +71,266 @@
     <ul>
       <li><a href="#about"><span>01</span>私たちについて</a></li>
       <li><a href="#services"><span>02</span>サービス</a></li>
-      <li><a href="#company"><span>03</span>会社情報</a></li>
-      <li><a href="#recruit"><span>04</span>採用情報</a></li>
-      <li><a href="#contact"><span>05</span>お問い合わせ</a></li>
+      <li><a href="#reasons"><span>03</span>選ばれる理由</a></li>
+      <li><a href="#company"><span>04</span>会社情報</a></li>
+      <li><a href="#recruit"><span>05</span>採用情報</a></li>
+      <li><a href="#contact"><span>06</span>お問い合わせ</a></li>
     </ul>
+    <a href="#contact" class="btn-cta mnav-cta"><span>お問い合わせ</span></a>
   </nav>
 </div>
 
-<main>
+<main id="top">
+
+<!-- ================= HERO ================= -->
 <section class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-media" aria-hidden="true">
+    <img src="images/hero-1.jpg" alt="" width="1600" height="1000">
+    <span class="hero-scrim"></span>
+  </div>
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow reveal"><span class="eyebrow-line"></span>PACKING &amp; FULFILLMENT<span class="eyebrow-jp">物流アウトソーシング</span></p>
       <!-- 要確認：キャッチコピーは提案生成 -->
+      <p class="hero-eyebrow">物流アウトソーシング｜在庫・梱包・発送</p>
       <h1 class="hero-title">
-        <span class="line"><span class="w">たいせつな商品を、</span></span>
-        <span class="line"><span class="w"><em>ていねいに</em>お届けまで。</span></span>
+        <span class="l">たいせつな商品を、</span>
+        <span class="l"><em>ていねいに</em></span>
+        <span class="l">お届けまで。</span>
       </h1>
-      <p class="hero-lead">在庫管理から梱包、発送まで。株式会社Fioreは、ひとつひとつの商品を心を込めてお預かりし、あなたのビジネスをやさしく支えます。</p>
-      <div class="hero-btns">
-        <a class="btn-fill" href="#contact"><span>お問い合わせ</span><i class="btn-arrow" aria-hidden="true">→</i></a>
-        <a class="btn-ghost" href="#recruit"><span>採用情報を見る</span></a>
-      </div>
+      <p class="hero-lead">在庫管理から梱包、発送まで。ひとつひとつの商品を心を込めてお預かりし、あなたのビジネスをまるごと支えます。</p>
+      <ul class="hero-stats">
+        <li><span class="s-label">対応サービス</span><span class="s-value">3<small>領域</small></span></li>
+        <li><span class="s-label">全国の勤務地</span><span class="s-value"><span class="num" data-count="48">48</span><small>拠点</small></span></li>
+        <li><span class="s-label">設立</span><span class="s-value">2023<small>年</small></span></li>
+      </ul>
     </div>
-    <figure class="hero-photo">
-      <div class="hero-photo-frame">
-        <img src="images/hero-1.jpg" alt="ラベルで整理された倉庫の棚" width="900" height="1050">
-      </div>
-      <!-- 要確認：バッジ文言は採用情報より -->
-      <span class="hero-badge"><b>未経験さん歓迎！</b>ていねいに指導します</span>
-    </figure>
-  </div>
-  <div class="hero-marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>在庫管理</span><i>✦</i><span>商品梱包</span><i>✦</i><span>発送代行</span><i>✦</i><span>EC・小ロット対応</span><i>✦</i><span>ていねい・正確</span><i>✦</i><span>ワンストップ</span><i>✦</i>
-      <span>在庫管理</span><i>✦</i><span>商品梱包</span><i>✦</i><span>発送代行</span><i>✦</i><span>EC・小ロット対応</span><i>✦</i><span>ていねい・正確</span><i>✦</i><span>ワンストップ</span><i>✦</i>
+
+    <!-- ヒーロー右：クイックお問い合わせカード -->
+    <div class="hero-card">
+      <span class="hero-card-ribbon">2営業日以内にご返信します</span>
+      <p class="hero-card-title">無料相談・お問い合わせ</p>
+      <p class="hero-card-note">在庫・梱包・発送のご相談、採用エントリーはこちらから。</p>
+      <!-- 要確認：送信先（action）は未設定。メール/フォーム連携の確定後に設定 -->
+      <form class="hero-form" action="#" method="post" aria-label="クイックお問い合わせ">
+        <label class="hf-field">
+          <span>お問い合わせ項目<i class="req">必須</i></span>
+          <select name="type" required>
+            <option value="" disabled selected>選択してください</option>
+            <option value="service">サービスのご依頼・お見積り</option>
+            <option value="recruit">採用エントリーについて</option>
+            <option value="other">その他</option>
+          </select>
+        </label>
+        <label class="hf-field">
+          <span>お名前<i class="req">必須</i></span>
+          <input type="text" name="name" autocomplete="name" placeholder="山田 花子" required>
+        </label>
+        <label class="hf-field">
+          <span>メールアドレス<i class="req">必須</i></span>
+          <input type="email" name="email" autocomplete="email" placeholder="example@example.com" required>
+        </label>
+        <button type="submit" class="btn-cta hero-form-btn"><span>この内容で相談する</span><i aria-hidden="true">→</i></button>
+        <p class="hf-privacy">送信により<a href="#contact">お取り扱い方針</a>に同意したものとみなします。</p>
+      </form>
     </div>
   </div>
 </section>
 
+<!-- ================= お悩み（ダーク） ================= -->
+<section class="pains">
+  <div class="pains-inner">
+    <div class="pains-head">
+      <p class="eyebrow eyebrow--light">こんなお悩みありませんか？</p>
+      <!-- 要確認：お悩み文言は業種からの提案生成 -->
+      <h2 class="pains-title">物流業務に、<br>手が回っていますか。</h2>
+    </div>
+    <ul class="pain-list">
+      <li class="pain reveal"><span class="pain-ico" aria-hidden="true">📦</span><p>在庫管理や出荷作業に、人手も時間も取られている</p></li>
+      <li class="pain reveal"><span class="pain-ico" aria-hidden="true">📈</span><p>繁忙期の波に、出荷が追いつかない</p></li>
+      <li class="pain reveal"><span class="pain-ico" aria-hidden="true">🎁</span><p>梱包の品質や、誤出荷・破損が心配</p></li>
+      <li class="pain reveal"><span class="pain-ico" aria-hidden="true">🛒</span><p>少量多品種のEC発送に、柔軟に対応してくれる先がない</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= Fioreなら（3つの価値） ================= -->
+<section class="solution">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <p class="eyebrow">株式会社Fioreなら</p>
+      <h2 class="sec-title">在庫から発送まで、<br>まるごとお任せください。</h2>
+    </div>
+    <div class="value-grid">
+      <div class="value reveal">
+        <span class="value-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05"/><path d="M12 22.08V12"/></svg>
+        </span>
+        <h3>在庫から発送まで、<br>ワンストップ</h3>
+        <p>入庫・保管から梱包・出荷まで一貫対応。窓口ひとつで、まるごとお任せいただけます。</p>
+      </div>
+      <div class="value reveal">
+        <span class="value-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+        </span>
+        <h3>ていねいで、<br>正確な作業</h3>
+        <p>検品と梱包をていねいに。誤出荷や破損といったトラブルのリスクを抑えます。</p>
+      </div>
+      <div class="value reveal">
+        <span class="value-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        </span>
+        <h3>スピードと、<br>柔軟さ</h3>
+        <p>当日・翌日の出荷や繁忙期の波にも柔軟に対応。売れるタイミングを逃しません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 私たちについて ================= -->
 <section class="about" id="about">
   <div class="wrap">
-    <div class="sec-head sec-head--left reveal">
-      <p class="eyebrow"><span class="sec-index">01</span><span class="eyebrow-line"></span>ABOUT</p>
-      <h2 class="sec-title">私たちについて</h2>
-    </div>
     <div class="about-grid">
       <figure class="about-photo reveal">
         <img src="images/about.jpg" alt="ていねいに梱包された荷物" loading="lazy" width="1000" height="850">
-        <span class="about-tag" aria-hidden="true">Since 2023</span>
+        <span class="about-badge" aria-hidden="true">Since 2023</span>
       </figure>
       <div class="about-copy reveal">
-        <!-- 要確認：本文は業種からの提案生成 -->
-        <p class="about-lead">株式会社Fioreは、在庫管理代行・商品梱包代行・商品発送代行を手がける物流アウトソーシングの会社です。</p>
-        <p>「たいせつな商品を、たいせつに扱う」。荷物の向こうにいるお客様と、その先の生活者を思い、ていねいで正確な作業を積み重ねています。煩雑になりがちな物流業務は、私たちにおまかせください。</p>
+        <div class="sec-head sec-head--left">
+          <p class="eyebrow">ABOUT｜私たちについて</p>
+          <!-- 要確認：本文は業種からの提案生成 -->
+          <h2 class="sec-title">たいせつな商品を、<br>たいせつに扱う。</h2>
+        </div>
+        <p>株式会社Fioreは、在庫管理代行・商品梱包代行・商品発送代行を手がける物流アウトソーシングの会社です。</p>
+        <p>荷物の向こうにいるお客様と、その先の生活者を思い、ていねいで正確な作業を積み重ねています。煩雑になりがちな物流業務は、私たちにおまかせください。</p>
+        <a href="#contact" class="btn-cta about-cta"><span>お問い合わせはこちら</span><i aria-hidden="true">→</i></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="strengths">
-  <div class="wrap">
-    <div class="sec-head sec-head--left reveal">
-      <p class="eyebrow"><span class="eyebrow-line"></span>WHY FIORE</p>
-      <h2 class="sec-title">選ばれる理由</h2>
-      <p class="sec-lead">わたしたちが大切にしている4つのこと</p>
-    </div>
-    <!-- 要確認：強み4点は業種からの提案生成 -->
-    <div class="str-list">
-      <div class="strength reveal">
-        <span class="str-num" aria-hidden="true">01</span>
-        <div class="str-body">
-          <h3>在庫から発送まで、ワンストップ</h3>
-          <p>入庫・保管・在庫管理・梱包・出荷までを一貫してお引き受け。窓口ひとつで、まるごとお任せいただけます。</p>
-        </div>
-      </div>
-      <div class="strength reveal">
-        <span class="str-num" aria-hidden="true">02</span>
-        <div class="str-body">
-          <h3>ていねいで、正確な作業</h3>
-          <p>ひとつひとつ心を込めて。検品と梱包を大切にし、誤出荷や破損といったトラブルのリスクを抑えます。</p>
-        </div>
-      </div>
-      <div class="strength reveal">
-        <span class="str-num" aria-hidden="true">03</span>
-        <div class="str-body">
-          <h3>EC・小ロットにもやさしく対応</h3>
-          <p>ネットショップの少量多品種から、まとまった数量の発送まで。事業の成長やフェーズに寄り添います。</p>
-        </div>
-      </div>
-      <div class="strength reveal">
-        <span class="str-num" aria-hidden="true">04</span>
-        <div class="str-body">
-          <h3>スピードと、柔軟さ</h3>
-          <p>当日・翌日の出荷や繁忙期の波にも柔軟に対応。お客様の「売れるタイミング」を逃しません。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- ================= サービス内容 ================= -->
 <section class="services" id="services">
   <div class="wrap">
-    <div class="sec-head sec-head--left reveal">
-      <p class="eyebrow"><span class="sec-index">02</span><span class="eyebrow-line"></span>SERVICES</p>
-      <h2 class="sec-title">サービス内容</h2>
-      <p class="sec-lead">在庫から発送まで、まるごとお引き受けします</p>
+    <div class="sec-head sec-head--center reveal">
+      <p class="eyebrow">SERVICES｜サービス内容</p>
+      <h2 class="sec-title">3つのサービスで、<br>物流をまるごとサポート。</h2>
     </div>
     <div class="services-grid">
-      <figure class="service reveal">
+      <article class="service reveal">
         <div class="service-media">
           <img src="images/service-1.jpg" alt="整然と保管された倉庫の在庫" loading="lazy" width="760" height="570">
-          <span class="service-num" aria-hidden="true">01</span>
+          <span class="service-tag" aria-hidden="true">01</span>
         </div>
         <div class="service-body">
           <h3>在庫管理代行</h3>
           <p>入出庫の記録から在庫データの管理まで。いつでも正確な在庫状況を保ちます。</p>
         </div>
-      </figure>
-      <figure class="service reveal">
+      </article>
+      <article class="service reveal">
         <div class="service-media">
           <img src="images/service-2.jpg" alt="緩衝材でていねいに梱包された箱" loading="lazy" width="760" height="570">
-          <span class="service-num" aria-hidden="true">02</span>
+          <span class="service-tag" aria-hidden="true">02</span>
         </div>
         <div class="service-body">
           <h3>商品梱包代行</h3>
           <p>商品に合わせたていねいな梱包。破損防止と美しい仕上がりを両立します。</p>
         </div>
-      </figure>
-      <figure class="service reveal">
+      </article>
+      <article class="service reveal">
         <div class="service-media">
           <img src="images/service-3.jpg" alt="発送前に積み込まれた荷物" loading="lazy" width="760" height="570">
-          <span class="service-num" aria-hidden="true">03</span>
+          <span class="service-tag" aria-hidden="true">03</span>
         </div>
         <div class="service-body">
           <h3>商品発送代行</h3>
           <p>受注から出荷・配送手配まで一括対応。スピーディで確実にお届けします。</p>
         </div>
-      </figure>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- ================= 選ばれる理由（ピンク） ================= -->
+<section class="reasons" id="reasons">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <p class="eyebrow">WHY FIORE｜選ばれる理由</p>
+      <h2 class="sec-title">わたしたちが大切にしている、<br>4つのこと。</h2>
+    </div>
+    <div class="reason-grid">
+      <div class="reason reveal">
+        <span class="reason-num" aria-hidden="true">01</span>
+        <h3>在庫から発送まで、ワンストップ</h3>
+        <p>入庫・保管・在庫管理・梱包・出荷までを一貫してお引き受け。窓口ひとつで、まるごとお任せいただけます。</p>
+      </div>
+      <div class="reason reveal">
+        <span class="reason-num" aria-hidden="true">02</span>
+        <h3>ていねいで、正確な作業</h3>
+        <p>ひとつひとつ心を込めて。検品と梱包を大切にし、誤出荷や破損といったトラブルのリスクを抑えます。</p>
+      </div>
+      <div class="reason reveal">
+        <span class="reason-num" aria-hidden="true">03</span>
+        <h3>EC・小ロットにもやさしく対応</h3>
+        <p>ネットショップの少量多品種から、まとまった数量の発送まで。事業の成長やフェーズに寄り添います。</p>
+      </div>
+      <div class="reason reveal">
+        <span class="reason-num" aria-hidden="true">04</span>
+        <h3>スピードと、柔軟さ</h3>
+        <p>当日・翌日の出荷や繁忙期の波にも柔軟に対応。お客様の「売れるタイミング」を逃しません。</p>
+      </div>
+    </div>
+    <div class="reasons-cta reveal">
+      <a href="#contact" class="btn-cta btn-cta--lg"><span>お問い合わせはこちら</span><i aria-hidden="true">→</i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ご依頼の流れ（STEP） ================= -->
+<section class="flow">
+  <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <p class="eyebrow">FLOW｜ご依頼の流れ</p>
+      <!-- 要確認：流れは一般的な提案。実運用に合わせて要調整 -->
+      <h2 class="sec-title">お問い合わせから<br>運用開始までの流れ</h2>
+      <p class="sec-lead">まずはお気軽にご相談ください。ご状況をうかがい、最適な進め方をご提案します。</p>
+    </div>
+    <ol class="flow-grid">
+      <li class="flow-step reveal">
+        <span class="flow-num">STEP 01</span>
+        <h3>お問い合わせ・ご相談</h3>
+        <p>フォームよりご連絡ください。取り扱い商品や現在の物流のお困りごとをお聞かせください。</p>
+      </li>
+      <li class="flow-step reveal">
+        <span class="flow-num">STEP 02</span>
+        <h3>業務内容のヒアリング</h3>
+        <p>商品特性・物量・出荷頻度などを確認し、必要な作業範囲を整理します。</p>
+      </li>
+      <li class="flow-step reveal">
+        <span class="flow-num">STEP 03</span>
+        <h3>お見積り・ご契約</h3>
+        <p>内容に合わせてお見積りをご提示。ご納得のうえでご契約へ進みます。</p>
+      </li>
+      <li class="flow-step reveal">
+        <span class="flow-num">STEP 04</span>
+        <h3>運用スタート</h3>
+        <p>入庫・保管から梱包・発送まで運用を開始。安定した物流をていねいに支えます。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 会社情報 ================= -->
 <section class="company" id="company">
   <div class="wrap">
+    <div class="sec-head sec-head--center reveal">
+      <p class="eyebrow">COMPANY｜会社情報</p>
+      <h2 class="sec-title">会社概要</h2>
+    </div>
     <div class="company-grid">
       <div class="company-info reveal">
-        <div class="sec-head sec-head--left">
-          <p class="eyebrow"><span class="sec-index">03</span><span class="eyebrow-line"></span>COMPANY</p>
-          <h2 class="sec-title">会社情報</h2>
-        </div>
-        <address class="company-add">
-          <strong>株式会社Fiore</strong>
-          〒542-0081<br>
-          大阪府大阪市中央区南船場四丁目10番5号 南船場SOHOビル702
-        </address>
         <dl class="company-dl">
+          <div><dt>会社名</dt><dd>株式会社Fiore（FIORE CO., LTD.）</dd></div>
+          <div><dt>所在地</dt><dd>〒542-0081<br>大阪府大阪市中央区南船場四丁目10番5号 南船場SOHOビル702</dd></div>
           <div><dt>設立</dt><dd>令和5年（2023年）6月1日</dd></div>
           <div><dt>代表者</dt><dd>野口 梨沙</dd></div>
           <div><dt>事業内容</dt><dd>在庫管理代行／商品梱包代行／商品発送代行</dd></div>
@@ -239,20 +343,20 @@
   </div>
 </section>
 
+<!-- ================= 採用情報（ダーク） ================= -->
 <section class="recruit" id="recruit">
   <div class="wrap">
-    <div class="sec-head sec-head--left reveal">
-      <p class="eyebrow"><span class="sec-index">04</span><span class="eyebrow-line"></span>RECRUIT</p>
-      <h2 class="sec-title">採用情報</h2>
-      <p class="sec-lead">一緒に働く仲間を募集しています</p>
+    <div class="sec-head sec-head--center reveal">
+      <p class="eyebrow eyebrow--light">RECRUIT｜採用情報</p>
+      <h2 class="recruit-title">一緒に働く仲間を<br>募集しています。</h2>
     </div>
     <!-- 要確認：採用内容はダイナマイト社サイトを参照した仮内容。Fiore用の数値・条件は要確認 -->
     <p class="recruit-lead reveal">事業拡大に伴い、一緒に働く仲間を募集しています。未経験の方もていねいに指導しますので、はじめての方も安心してご応募ください。<br>※各地に支店を開設予定</p>
 
     <div class="recruit-stats">
-      <div class="stat reveal"><b>土日祝</b><span>休日</span></div>
-      <div class="stat reveal"><b>未経験<small>歓迎</small></b><span>研修あり</span></div>
-      <div class="stat reveal"><b><span class="num" data-count="48">48</span><small>拠点</small></b><span>全国の勤務地</span></div>
+      <div class="rstat reveal"><b>土日祝</b><span>休日</span></div>
+      <div class="rstat reveal"><b>未経験<small>歓迎</small></b><span>研修あり</span></div>
+      <div class="rstat reveal"><b><span class="num" data-count="48">48</span><small>拠点</small></b><span>全国の勤務地</span></div>
     </div>
 
     <div class="recruit-table reveal">
@@ -272,17 +376,20 @@
   </div>
 </section>
 
+<!-- ================= お問い合わせ ================= -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="sec-head sec-head--left reveal">
-      <p class="eyebrow"><span class="sec-index">05</span><span class="eyebrow-line"></span>CONTACT</p>
-      <h2 class="sec-title">お問い合わせ</h2>
+    <div class="sec-head sec-head--center reveal">
+      <p class="eyebrow">CONTACT｜お問い合わせ</p>
+      <h2 class="sec-title">お気軽にご相談ください</h2>
+      <p class="contact-note">2営業日以内に担当者からご返信いたします。<br>※返信はご登録のメールアドレス宛にお送りします。</p>
     </div>
-    <p class="contact-note reveal">2営業日以内に担当者からご返信いたします。<br>※返信はご登録のメールアドレス宛にお送りします。</p>
+
     <div class="notice reveal">
       <h3 class="notice-title">営業・勧誘目的のご連絡について</h3>
       <p>当社では、営業・勧誘を目的としたお電話およびお問い合わせフォームからのご連絡を一切お断りしております。<br>ご理解とご協力をお願いいたします。</p>
     </div>
+
     <!-- 要確認：送信先（action）は未設定。メール/フォーム連携の確定後に設定 -->
     <form class="form reveal" action="#" method="post">
       <div class="field">
@@ -310,7 +417,7 @@
         <label for="message">お問い合わせ内容</label>
         <textarea id="message" name="message" rows="5" placeholder="例）採用エントリーを希望しています。"></textarea>
       </div>
-      <button type="submit" class="submit-btn"><span>送信する</span><i class="btn-arrow" aria-hidden="true">→</i></button>
+      <button type="submit" class="btn-cta submit-btn"><span>送信する</span><i aria-hidden="true">→</i></button>
     </form>
   </div>
 </section>
@@ -319,22 +426,25 @@
 <footer class="footer">
   <div class="wrap">
     <div class="footer-top">
-      <p class="footer-brand">株式会社Fiore<small>FIORE CO., LTD.</small></p>
+      <div class="footer-brand-block">
+        <p class="footer-brand"><span class="brand-mark" aria-hidden="true"></span>株式会社Fiore<small>FIORE CO., LTD.</small></p>
+        <address class="footer-add">〒542-0081　大阪府大阪市中央区南船場四丁目10番5号 南船場SOHOビル702</address>
+      </div>
       <nav class="footer-nav" aria-label="フッターナビゲーション">
         <a href="#about">私たちについて</a>
         <a href="#services">サービス</a>
+        <a href="#reasons">選ばれる理由</a>
         <a href="#company">会社情報</a>
         <a href="#recruit">採用情報</a>
         <a href="#contact">お問い合わせ</a>
       </nav>
     </div>
-    <address class="footer-add">〒542-0081　大阪府大阪市中央区南船場四丁目10番5号 南船場SOHOビル702</address>
     <p class="copyright">© 2026 Fiore Co., Ltd. All Rights Reserved.</p>
   </div>
 </footer>
 
 <button class="to-top" id="toTop" aria-label="ページ上部へ戻る">↑</button>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=20260908"></script>
 </body>
 </html>

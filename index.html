@@ -21,7 +21,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 
 <script type="application/ld+json">
@@ -43,92 +43,129 @@
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
 <header class="header" id="header">
   <a class="brand" href="#">
-    <span>
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text">
       <span class="brand-name">株式会社Fiore</span>
       <span class="brand-sub">FIORE CO., LTD.</span>
     </span>
   </a>
   <nav class="gnav" aria-label="グローバルナビゲーション">
     <ul>
-      <li><a href="#about">私たちについて</a></li>
-      <li><a href="#services">サービス</a></li>
-      <li><a href="#company">会社情報</a></li>
-      <li><a href="#recruit">採用情報</a></li>
+      <li><a href="#about"><span class="gnav-i">01</span>私たちについて</a></li>
+      <li><a href="#services"><span class="gnav-i">02</span>サービス</a></li>
+      <li><a href="#company"><span class="gnav-i">03</span>会社情報</a></li>
+      <li><a href="#recruit"><span class="gnav-i">04</span>採用情報</a></li>
     </ul>
   </nav>
-  <a href="#contact" class="cta-btn">お問い合わせ</a>
+  <a href="#contact" class="cta-btn"><span>お問い合わせ</span></a>
   <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="mnav"><span></span></button>
 </header>
 
 <div class="mnav" id="mnav">
-  <ul>
-    <li><a href="#about">私たちについて</a></li>
-    <li><a href="#services">サービス</a></li>
-    <li><a href="#company">会社情報</a></li>
-    <li><a href="#recruit">採用情報</a></li>
-    <li><a href="#contact">お問い合わせ</a></li>
-  </ul>
+  <nav aria-label="モバイルナビゲーション">
+    <ul>
+      <li><a href="#about"><span>01</span>私たちについて</a></li>
+      <li><a href="#services"><span>02</span>サービス</a></li>
+      <li><a href="#company"><span>03</span>会社情報</a></li>
+      <li><a href="#recruit"><span>04</span>採用情報</a></li>
+      <li><a href="#contact"><span>05</span>お問い合わせ</a></li>
+    </ul>
+  </nav>
 </div>
 
 <main>
 <section class="hero">
-  <div class="hero-copy">
-    <!-- 要確認：キャッチコピーは提案生成 -->
-    <h1>たいせつな商品を、<br><em>ていねいに</em>お届けまで。</h1>
-    <p>在庫管理から梱包、発送まで。株式会社Fioreは、ひとつひとつの商品を心を込めてお預かりし、あなたのビジネスをやさしく支えます。</p>
-    <div class="hero-btns">
-      <a class="btn-fill" href="#contact">お問い合わせ</a>
-      <a class="btn-ghost" href="#recruit">採用情報を見る</a>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="eyebrow-line"></span>PACKING &amp; FULFILLMENT<span class="eyebrow-jp">物流アウトソーシング</span></p>
+      <!-- 要確認：キャッチコピーは提案生成 -->
+      <h1 class="hero-title">
+        <span class="line"><span class="w">たいせつな商品を、</span></span>
+        <span class="line"><span class="w"><em>ていねいに</em>お届けまで。</span></span>
+      </h1>
+      <p class="hero-lead">在庫管理から梱包、発送まで。株式会社Fioreは、ひとつひとつの商品を心を込めてお預かりし、あなたのビジネスをやさしく支えます。</p>
+      <div class="hero-btns">
+        <a class="btn-fill" href="#contact"><span>お問い合わせ</span><i class="btn-arrow" aria-hidden="true">→</i></a>
+        <a class="btn-ghost" href="#recruit"><span>採用情報を見る</span></a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <div class="hero-photo-frame">
+        <img src="images/hero-1.jpg" alt="ラベルで整理された倉庫の棚" width="900" height="1050">
+      </div>
+      <!-- 要確認：バッジ文言は採用情報より -->
+      <span class="hero-badge"><b>未経験さん歓迎！</b>ていねいに指導します</span>
+    </figure>
+  </div>
+  <div class="hero-marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>在庫管理</span><i>✦</i><span>商品梱包</span><i>✦</i><span>発送代行</span><i>✦</i><span>EC・小ロット対応</span><i>✦</i><span>ていねい・正確</span><i>✦</i><span>ワンストップ</span><i>✦</i>
+      <span>在庫管理</span><i>✦</i><span>商品梱包</span><i>✦</i><span>発送代行</span><i>✦</i><span>EC・小ロット対応</span><i>✦</i><span>ていねい・正確</span><i>✦</i><span>ワンストップ</span><i>✦</i>
     </div>
   </div>
-  <figure class="hero-photo">
-    <img src="images/hero-1.jpg" alt="ラベルで整理された倉庫の棚" width="900" height="1050">
-    <!-- 要確認：バッジ文言は採用情報より -->
-    <span class="hero-badge">未経験さん歓迎！<br>ていねいに指導します</span>
-  </figure>
 </section>
 
 <section class="about" id="about">
   <div class="wrap">
-    <figure class="about-photo reveal">
-      <img src="images/about.jpg" alt="ていねいに梱包された荷物" loading="lazy" width="1000" height="850">
-    </figure>
-    <div class="about-copy reveal">
-      <div class="sec-head">
-        <h2 class="sec-title">私たちについて</h2>
+    <div class="sec-head sec-head--left reveal">
+      <p class="eyebrow"><span class="sec-index">01</span><span class="eyebrow-line"></span>ABOUT</p>
+      <h2 class="sec-title">私たちについて</h2>
+    </div>
+    <div class="about-grid">
+      <figure class="about-photo reveal">
+        <img src="images/about.jpg" alt="ていねいに梱包された荷物" loading="lazy" width="1000" height="850">
+        <span class="about-tag" aria-hidden="true">Since 2023</span>
+      </figure>
+      <div class="about-copy reveal">
+        <!-- 要確認：本文は業種からの提案生成 -->
+        <p class="about-lead">株式会社Fioreは、在庫管理代行・商品梱包代行・商品発送代行を手がける物流アウトソーシングの会社です。</p>
+        <p>「たいせつな商品を、たいせつに扱う」。荷物の向こうにいるお客様と、その先の生活者を思い、ていねいで正確な作業を積み重ねています。煩雑になりがちな物流業務は、私たちにおまかせください。</p>
       </div>
-      <!-- 要確認：本文は業種からの提案生成 -->
-      <p>株式会社Fioreは、在庫管理代行・商品梱包代行・商品発送代行を手がける物流アウトソーシングの会社です。</p>
-      <p>「たいせつな商品を、たいせつに扱う」。荷物の向こうにいるお客様と、その先の生活者を思い、ていねいで正確な作業を積み重ねています。煩雑になりがちな物流業務は、私たちにおまかせください。</p>
     </div>
   </div>
 </section>
 
 <section class="strengths">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head sec-head--left reveal">
+      <p class="eyebrow"><span class="eyebrow-line"></span>WHY FIORE</p>
       <h2 class="sec-title">選ばれる理由</h2>
       <p class="sec-lead">わたしたちが大切にしている4つのこと</p>
     </div>
     <!-- 要確認：強み4点は業種からの提案生成 -->
     <div class="str-list">
       <div class="strength reveal">
-        <h3>在庫から発送まで、ワンストップ</h3>
-        <p>入庫・保管・在庫管理・梱包・出荷までを一貫してお引き受け。窓口ひとつで、まるごとお任せいただけます。</p>
+        <span class="str-num" aria-hidden="true">01</span>
+        <div class="str-body">
+          <h3>在庫から発送まで、ワンストップ</h3>
+          <p>入庫・保管・在庫管理・梱包・出荷までを一貫してお引き受け。窓口ひとつで、まるごとお任せいただけます。</p>
+        </div>
       </div>
       <div class="strength reveal">
-        <h3>ていねいで、正確な作業</h3>
-        <p>ひとつひとつ心を込めて。検品と梱包を大切にし、誤出荷や破損といったトラブルのリスクを抑えます。</p>
+        <span class="str-num" aria-hidden="true">02</span>
+        <div class="str-body">
+          <h3>ていねいで、正確な作業</h3>
+          <p>ひとつひとつ心を込めて。検品と梱包を大切にし、誤出荷や破損といったトラブルのリスクを抑えます。</p>
+        </div>
       </div>
       <div class="strength reveal">
-        <h3>EC・小ロットにもやさしく対応</h3>
-        <p>ネットショップの少量多品種から、まとまった数量の発送まで。事業の成長やフェーズに寄り添います。</p>
+        <span class="str-num" aria-hidden="true">03</span>
+        <div class="str-body">
+          <h3>EC・小ロットにもやさしく対応</h3>
+          <p>ネットショップの少量多品種から、まとまった数量の発送まで。事業の成長やフェーズに寄り添います。</p>
+        </div>
       </div>
       <div class="strength reveal">
-        <h3>スピードと、柔軟さ</h3>
-        <p>当日・翌日の出荷や繁忙期の波にも柔軟に対応。お客様の「売れるタイミング」を逃しません。</p>
+        <span class="str-num" aria-hidden="true">04</span>
+        <div class="str-body">
+          <h3>スピードと、柔軟さ</h3>
+          <p>当日・翌日の出荷や繁忙期の波にも柔軟に対応。お客様の「売れるタイミング」を逃しません。</p>
+        </div>
       </div>
     </div>
   </div>
@@ -136,25 +173,41 @@
 
 <section class="services" id="services">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head sec-head--left reveal">
+      <p class="eyebrow"><span class="sec-index">02</span><span class="eyebrow-line"></span>SERVICES</p>
       <h2 class="sec-title">サービス内容</h2>
       <p class="sec-lead">在庫から発送まで、まるごとお引き受けします</p>
     </div>
     <div class="services-grid">
       <figure class="service reveal">
-        <img src="images/service-1.jpg" alt="整然と保管された倉庫の在庫" loading="lazy" width="760" height="570">
-        <h3>在庫管理代行</h3>
-        <p>入出庫の記録から在庫データの管理まで。いつでも正確な在庫状況を保ちます。</p>
+        <div class="service-media">
+          <img src="images/service-1.jpg" alt="整然と保管された倉庫の在庫" loading="lazy" width="760" height="570">
+          <span class="service-num" aria-hidden="true">01</span>
+        </div>
+        <div class="service-body">
+          <h3>在庫管理代行</h3>
+          <p>入出庫の記録から在庫データの管理まで。いつでも正確な在庫状況を保ちます。</p>
+        </div>
       </figure>
       <figure class="service reveal">
-        <img src="images/service-2.jpg" alt="緩衝材でていねいに梱包された箱" loading="lazy" width="760" height="570">
-        <h3>商品梱包代行</h3>
-        <p>商品に合わせたていねいな梱包。破損防止と美しい仕上がりを両立します。</p>
+        <div class="service-media">
+          <img src="images/service-2.jpg" alt="緩衝材でていねいに梱包された箱" loading="lazy" width="760" height="570">
+          <span class="service-num" aria-hidden="true">02</span>
+        </div>
+        <div class="service-body">
+          <h3>商品梱包代行</h3>
+          <p>商品に合わせたていねいな梱包。破損防止と美しい仕上がりを両立します。</p>
+        </div>
       </figure>
       <figure class="service reveal">
-        <img src="images/service-3.jpg" alt="発送前に積み込まれた荷物" loading="lazy" width="760" height="570">
-        <h3>商品発送代行</h3>
-        <p>受注から出荷・配送手配まで一括対応。スピーディで確実にお届けします。</p>
+        <div class="service-media">
+          <img src="images/service-3.jpg" alt="発送前に積み込まれた荷物" loading="lazy" width="760" height="570">
+          <span class="service-num" aria-hidden="true">03</span>
+        </div>
+        <div class="service-body">
+          <h3>商品発送代行</h3>
+          <p>受注から出荷・配送手配まで一括対応。スピーディで確実にお届けします。</p>
+        </div>
       </figure>
     </div>
   </div>
@@ -162,30 +215,34 @@
 
 <section class="company" id="company">
   <div class="wrap">
-    <div class="reveal">
-      <div class="sec-head">
-        <h2 class="sec-title">会社情報</h2>
+    <div class="company-grid">
+      <div class="company-info reveal">
+        <div class="sec-head sec-head--left">
+          <p class="eyebrow"><span class="sec-index">03</span><span class="eyebrow-line"></span>COMPANY</p>
+          <h2 class="sec-title">会社情報</h2>
+        </div>
+        <address class="company-add">
+          <strong>株式会社Fiore</strong>
+          〒542-0081<br>
+          大阪府大阪市中央区南船場四丁目10番5号 南船場SOHOビル702
+        </address>
+        <dl class="company-dl">
+          <div><dt>設立</dt><dd>令和5年（2023年）6月1日</dd></div>
+          <div><dt>代表者</dt><dd>野口 梨沙</dd></div>
+          <div><dt>事業内容</dt><dd>在庫管理代行／商品梱包代行／商品発送代行</dd></div>
+        </dl>
       </div>
-      <address class="company-add">
-        <strong>株式会社Fiore</strong>
-        〒542-0081<br>
-        大阪府大阪市中央区南船場四丁目10番5号 南船場SOHOビル702
-      </address>
-      <dl class="company-dl">
-        <div><dt>設立</dt><dd>令和5年（2023年）6月1日</dd></div>
-        <div><dt>代表者</dt><dd>野口 梨沙</dd></div>
-        <div><dt>事業内容</dt><dd>在庫管理代行／商品梱包代行／商品発送代行</dd></div>
-      </dl>
-    </div>
-    <div class="company-map reveal">
-      <iframe title="株式会社Fiore 所在地の地図" src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%E8%88%B9%E5%A0%B4%E5%9B%9B%E4%B8%81%E7%9B%AE10-5&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="company-map reveal">
+        <iframe title="株式会社Fiore 所在地の地図" src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%97%E8%88%B9%E5%A0%B4%E5%9B%9B%E4%B8%81%E7%9B%AE10-5&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="recruit" id="recruit">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head sec-head--left reveal">
+      <p class="eyebrow"><span class="sec-index">04</span><span class="eyebrow-line"></span>RECRUIT</p>
       <h2 class="sec-title">採用情報</h2>
       <p class="sec-lead">一緒に働く仲間を募集しています</p>
     </div>
@@ -198,22 +255,27 @@
       <div class="stat reveal"><b><span class="num" data-count="48">48</span><small>拠点</small></b><span>全国の勤務地</span></div>
     </div>
 
-    <table class="recruit-table reveal">
-      <tbody>
-        <tr><th>業務内容</th><td>ピッキング・梱包・シール貼りなど</td></tr>
-        <tr><th>勤務時間</th><td>8:00〜17:00／20:00〜5:00　2交代勤務（休憩1時間）</td></tr>
-        <tr><th>休日</th><td>土日祝</td></tr>
-        <tr><th>福利厚生</th><td>有給休暇あり／社会保険完備／交通費全額支給</td></tr>
-        <tr><th>応募条件</th><td>未経験大歓迎！ていねいに指導します</td></tr>
-        <tr><th>勤務地</th><td><ul class="loc-list"><li>静岡県静岡市</li><li>大阪府堺市</li><li>京都府南丹市</li><li>京都府福知山市</li><li>秋田県大館市</li><li>北海道千歳市</li><li>福島県須賀川市</li><li>山形県寒河江市</li><li>福島県田村市</li><li>岩手県北上市</li><li>北海道岩見沢市</li><li>鳥取県米子市</li><li>東京都目黒区</li><li>茨城県常陸大宮市</li><li>兵庫県明石市</li><li>長野県佐久市</li><li>長野県小諸市</li><li>長野県安曇野市</li><li>山梨県甲府市</li><li>長野県飯田市</li><li>愛媛県四国中央市</li><li>広島県福山市</li><li>岡山県真庭市</li><li>埼玉県加須市</li><li>秋田県潟上市</li><li>北海道札幌市</li><li>宮城県黒川郡</li><li>愛知県豊田市</li><li>岐阜県岐阜市</li><li>新潟県柏崎市</li><li>愛知県刈谷市</li><li>千葉県千葉市</li><li>奈良県五條市</li><li>和歌山県橋本市</li><li>神奈川県厚木市</li><li>岩手県花巻市</li><li>福岡県豊前市</li><li>熊本県熊本市</li><li>滋賀県長浜市</li><li>大阪府富田林市</li><li>京都府京都市</li><li>兵庫県神戸市</li><li>兵庫県姫路市</li><li>兵庫県小野市</li><li>埼玉県さいたま市</li><li>東京都港区</li><li>福島県白河市</li><li>山口県下関市</li></ul></td></tr>
-      </tbody>
-    </table>
+    <div class="recruit-table reveal">
+      <dl class="recruit-dl">
+        <div><dt>業務内容</dt><dd>ピッキング・梱包・シール貼りなど</dd></div>
+        <div><dt>勤務時間</dt><dd>8:00〜17:00／20:00〜5:00　2交代勤務（休憩1時間）</dd></div>
+        <div><dt>休日</dt><dd>土日祝</dd></div>
+        <div><dt>福利厚生</dt><dd>有給休暇あり／社会保険完備／交通費全額支給</dd></div>
+        <div><dt>応募条件</dt><dd>未経験大歓迎！ていねいに指導します</dd></div>
+        <div class="recruit-loc"><dt>勤務地</dt><dd>
+          <ul class="loc-list">
+            <li>静岡県静岡市</li><li>大阪府堺市</li><li>京都府南丹市</li><li>京都府福知山市</li><li>秋田県大館市</li><li>北海道千歳市</li><li>福島県須賀川市</li><li>山形県寒河江市</li><li>福島県田村市</li><li>岩手県北上市</li><li>北海道岩見沢市</li><li>鳥取県米子市</li><li>東京都目黒区</li><li>茨城県常陸大宮市</li><li>兵庫県明石市</li><li>長野県佐久市</li><li>長野県小諸市</li><li>長野県安曇野市</li><li>山梨県甲府市</li><li>長野県飯田市</li><li>愛媛県四国中央市</li><li>広島県福山市</li><li>岡山県真庭市</li><li>埼玉県加須市</li><li>秋田県潟上市</li><li>北海道札幌市</li><li>宮城県黒川郡</li><li>愛知県豊田市</li><li>岐阜県岐阜市</li><li>新潟県柏崎市</li><li>愛知県刈谷市</li><li>千葉県千葉市</li><li>奈良県五條市</li><li>和歌山県橋本市</li><li>神奈川県厚木市</li><li>岩手県花巻市</li><li>福岡県豊前市</li><li>熊本県熊本市</li><li>滋賀県長浜市</li><li>大阪府富田林市</li><li>京都府京都市</li><li>兵庫県神戸市</li><li>兵庫県姫路市</li><li>兵庫県小野市</li><li>埼玉県さいたま市</li><li>東京都港区</li><li>福島県白河市</li><li>山口県下関市</li>
+          </ul>
+        </dd></div>
+      </dl>
+    </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head sec-head--left reveal">
+      <p class="eyebrow"><span class="sec-index">05</span><span class="eyebrow-line"></span>CONTACT</p>
       <h2 class="sec-title">お問い合わせ</h2>
     </div>
     <p class="contact-note reveal">2営業日以内に担当者からご返信いたします。<br>※返信はご登録のメールアドレス宛にお送りします。</p>
@@ -248,7 +310,7 @@
         <label for="message">お問い合わせ内容</label>
         <textarea id="message" name="message" rows="5" placeholder="例）採用エントリーを希望しています。"></textarea>
       </div>
-      <button type="submit" class="submit-btn">送信する</button>
+      <button type="submit" class="submit-btn"><span>送信する</span><i class="btn-arrow" aria-hidden="true">→</i></button>
     </form>
   </div>
 </section>
@@ -256,7 +318,16 @@
 
 <footer class="footer">
   <div class="wrap">
-    <p class="footer-brand">株式会社Fiore<small>FIORE CO., LTD.</small></p>
+    <div class="footer-top">
+      <p class="footer-brand">株式会社Fiore<small>FIORE CO., LTD.</small></p>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="#about">私たちについて</a>
+        <a href="#services">サービス</a>
+        <a href="#company">会社情報</a>
+        <a href="#recruit">採用情報</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
     <address class="footer-add">〒542-0081　大阪府大阪市中央区南船場四丁目10番5号 南船場SOHOビル702</address>
     <p class="copyright">© 2026 Fiore Co., Ltd. All Rights Reserved.</p>
   </div>
